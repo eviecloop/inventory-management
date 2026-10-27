@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,6 +107,14 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: {
+      title: 'Submitted Orders',
+      empty: 'No restocking orders have been submitted yet',
+      leadTime: '{days} days',
+      itemsCount: '{count} items',
+      totalCost: 'Total Cost',
+      leadTimeHeader: 'Lead Time'
+    },
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
@@ -198,9 +207,40 @@ export default {
     allMonths: 'All Months'
   },
 
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Recommend restocking orders based on forecasted demand within a budget',
+    budget: 'Budget',
+    recommendedItems: 'Recommended Items',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      trend: 'Trend',
+      quantity: 'Quantity',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time (days)'
+    },
+    summary: {
+      totalCost: 'Total Cost',
+      remainingBudget: 'Remaining Budget',
+      leadTime: 'Order Lead Time',
+      itemCount: 'Items'
+    },
+    days: '{days} days',
+    placeOrder: 'Place Order',
+    placing: 'Placing order...',
+    success: 'Order {orderNumber} was submitted successfully.',
+    viewOrders: 'View orders',
+    empty: 'No items need restocking within this budget',
+    error: 'Failed to place restocking order'
+  },
+
   // Statuses
   status: {
     delivered: 'Delivered',
+    submitted: 'Submitted',
     shipped: 'Shipped',
     processing: 'Processing',
     backordered: 'Backordered',
